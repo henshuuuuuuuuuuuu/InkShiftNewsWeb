@@ -1,0 +1,99 @@
+:root {
+    --primary: #1E1E2F;
+    --secondary: #FFDD57;
+    --text: #FFFFFF;
+    --accent: #4CAF50;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 4px solid var(--accent);
+}
+
+nav {
+    background-color: #2A2A3D;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+nav a.active {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section.news-article {
+    margin-bottom: 30px;
+    border-left: 5px solid var(--accent);
+    padding-left: 15px;
+}
+
+h2 {
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #2A2A3D;
+    text-align: center;
+    padding: 15px;
+    color: var(--text);
+    border-top: 4px solid var(--accent);
+    margin-top: 40px;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    z-index: 9999;
+}
